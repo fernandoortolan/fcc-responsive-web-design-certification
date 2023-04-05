@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #0000ff, #3c00a0);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+/* HEADER */
+
+header {
+  margin-bottom: 3rem;
+}
+
+#title {
+  margin-bottom: 1.5rem;
+  color: #2828ff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#org {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, 
+a:visited, 
+a:hover, 
+a:active {
+  color: #2828ff;
+}
+
+/* FORM */
+
+fieldset {
+  margin-bottom: 3rem;
+}
+
+hr {
+  height: 2px;
+  margin-bottom: 3rem;
+  background-color: #d1d1d1;
+}
+
+#personal-info div {
+  margin-bottom: 1.5rem;
+}
+
+#personal-info div:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-box {
+  display: block;
+  height: 2.625rem;
+  width: 100%;
+  margin-top: .75rem;
+  padding-inline: 1.125rem;
+  border-radius: .25rem;
+  box-shadow: inset 0 0 2px 1px #808080;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.tip {
+  color: #808080;
+  font-size: .875rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+#user-recommendation div, #improvement div {
+  margin-top: .75rem;
+}
+
+.input-radio, .input-checkbox {
+  min-height: 1.125rem;
+  min-width: 1.125rem;
+  margin-right: .75rem;
+}
+
+.tip, 
+.input-radio, 
+.input-checkbox {
+  vertical-align: text-top;
+}
+
+#comment {
+  min-height: 128px;
+  min-width: 256px;
+  padding-block: .75rem;
+  resize: vertical;
+}
+
+#submit {
+  height: 3rem;
+  width: 100%;
+  background: linear-gradient(to right bottom, #0000ff, #3c00a0);
+  border-radius: .25rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* MEDIA SCREENS */
+
+@media only screen and (max-width: 460px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  #org {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* on small screens, under 320px, linear-gradient doesn't work properly */
+  body {
+    background: #1e00d8;  /* middle color between the two linear-gradient colors */
+  }
+}
